@@ -10,7 +10,7 @@
     "esmodules": ["/lootsheetnpc5e.js"],
 	"styles": ["/css/lootsheetnpc5e.css"],
 	"socket": true,
-	"url": "https://github.com/jopeek/fvtt-loot-sheet-npc-5e",
-	"manifest": "https://raw.githubusercontent.com/jopeek/fvtt-loot-sheet-npc-5e/master/module.json",
-	"download": "https://github.com/jopeek/fvtt-loot-sheet-npc-5e/archive/master.zip"
+	"url": "https://github.com/akiiino/fvtt-loot-sheet-npc-5e",
+	"manifest": "https://raw.githubusercontent.com/akiiino/fvtt-loot-sheet-npc-5e/master/module.json",
+	"download": "https://github.com/akiiino/fvtt-loot-sheet-npc-5e/archive/master.zip"
 }
