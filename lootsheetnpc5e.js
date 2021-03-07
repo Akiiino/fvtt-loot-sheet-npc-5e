@@ -60,7 +60,7 @@ class LootSheet5eNPC extends ActorSheet5eNPC {
         });
 
         Handlebars.registerHelper('lootsheetprice', function (basePrice, modifier) {
-            return (Math.round(basePrice * modifier * 100) / 100).toLocaleString('en') + " gp";
+            return (Math.round(basePrice * modifier * 100) / 100).toLocaleString('en') + " credits";
         });
 
         const path = "systems/dnd5e/templates/actors/";
@@ -117,7 +117,7 @@ class LootSheet5eNPC extends ActorSheet5eNPC {
         sheetData.lootsheettype = lootsheettype;
         sheetData.totalItems = this.actor.data.items.length;
         sheetData.totalWeight = totalWeight.toLocaleString('en');
-        sheetData.totalPrice = totalPrice.toLocaleString('en') + " gp";
+        sheetData.totalPrice = totalPrice.toLocaleString('en') + " credits";
         sheetData.totalQuantity = totalQuantity;
         sheetData.priceModifier = priceModifier;
         sheetData.rolltables = game.tables.entities;
@@ -1363,7 +1363,7 @@ Hooks.once("init", () => {
         for (let m of moved) {
             chatMessage(
                 seller, buyer,
-                `${buyer.name} purchases ${quantity} x ${m.item.name} for ${itemCost}gp.`,
+                `${buyer.name} purchases ${quantity} x ${m.item.name} for ${itemCost} credits.`,
                 m.item);
         }
     }
